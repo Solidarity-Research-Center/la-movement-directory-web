@@ -8,7 +8,7 @@ git clone https://github.com/Solidarity-Research-Center/la-movement-directory-we
 
 ```
 
-Configure GitHub secrets found
+Configure GitHub secrets. Then:
 
 ```systemctl link /opt/la-movement-directory-web/ladirectoryfrontend.service```
 
