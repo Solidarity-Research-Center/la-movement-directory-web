@@ -1,0 +1,16 @@
+[Unit]
+Description=LA Social Movement Directory Frontent
+
+[Service]
+WorkingDirectory= /opt/la-movement-directory-web
+ExecStart=npm run preview
+
+Restart=always
+RestartSec=1
+
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=autodeploy
+
+[Install]
+WantedBy=multi-user.target
