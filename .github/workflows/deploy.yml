@@ -24,4 +24,5 @@ jobs:
           username: ${{ secrets.SSHUSERNAME }}
           password: ${{ secrets.SSHPASSWORD }}
           key: ${{ secrets.SSHKEY }}
+          debug: true
           script: cd /opt/la-movement-directory-web && git pull && npm install && npm run build && systemctl restart ladirectoryfrontend
