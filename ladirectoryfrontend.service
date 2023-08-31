@@ -2,7 +2,7 @@
 Description=LA Social Movement Directory Frontent
 
 [Service]
-WorkingDirectory= /opt/la-movement-directory-web
+WorkingDirectory=/opt/la-movement-directory-web
 ExecStart=runbashscript
 
 Restart=always
