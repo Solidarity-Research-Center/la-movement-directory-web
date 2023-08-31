@@ -25,4 +25,4 @@ jobs:
           password: ${{ secrets.SSHPASSWORD }}
           key: ${{ secrets.SSHKEY }}
           debug: true
-          script: cd /opt/la-movement-directory-web && git pull && npm install && npm run build && systemctl restart ladirectoryfrontend
+          script: cd /opt/la-movement-directory-web && git pull && /root/.nvm/versions/node/v20.5.1/bin/npm install && /root/.nvm/versions/node/v20.5.1/bin/npm run build && systemctl restart ladirectoryfrontend
