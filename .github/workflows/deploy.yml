@@ -19,7 +19,9 @@ jobs:
           npm run build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: appleboy/ssh-action@v1.0.0
         with:
-          branch: gh-pages
-          folder: public
+          host: ${{ secrets.SSHHOST }}
+          username: ${{ secrets.SSHUSERNAME }}
+          password: ${{ secrets.SSHPASSWORD }}
+          script: cd /opt/la-movement-directory-web && git pull && npm install && npm run build && systemctl restart ladirectoryfrontend
