@@ -1,30 +1,18 @@
 # Social Movement Directory Frontend
 
-Configure GitHub secrets found
-
-and then run `systemctl link ladirectoryfrontend.service`
-
-and then `systemctl start ladirectoryfrontend`
-
-# create-svelte
-
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
+## Download
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
+cd /opt
+git clone https://github.com/Solidarity-Research-Center/la-movement-directory-web
 
-# create a new project in my-app
-npm create svelte@latest my-app
 ```
 
-## Developing
+Configure GitHub secrets found
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```systemctl link /opt/la-movement-directory-web/ladirectoryfrontend.service```
+
+## Developing
 
 ```bash
 npm run dev
