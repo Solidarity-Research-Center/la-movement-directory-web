@@ -1,0 +1,4 @@
+#! /bin/bash
+source ${HOME}/.bashrc
+export PATH="/root/.nvm/versions/node/v20.5.1/bin/:$PATH" 
+npm run preview

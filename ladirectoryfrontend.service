@@ -3,7 +3,7 @@ Description=LA Social Movement Directory Frontent
 
 [Service]
 WorkingDirectory= /opt/la-movement-directory-web
-ExecStart=export PATH="/root/.nvm/versions/node/v20.5.1/bin/:$PATH" && npm run preview
+ExecStart=./runbashscript
 
 Restart=always
 RestartSec=1
