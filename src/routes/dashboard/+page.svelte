@@ -33,11 +33,13 @@ if (idToken) {
 
 <div>
 
-    <h1>Dashboard</h1>
+    <h1 class='text-2xl'>Dashboard</h1>
 
-    <h2>
+    <h2 class='text-xl'>
         My Organizations
     </h2>
+
+    
 
    <button on:click={testfirebase}>Test Firebase Endpoint</button>
 
