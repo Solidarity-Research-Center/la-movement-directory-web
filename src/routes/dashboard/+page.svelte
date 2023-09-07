@@ -12,7 +12,7 @@ async function testfirebase() {
 const idToken = await auth.currentUser.getIdToken();
 
 if (idToken) {
-    fetch("http://localhost:38472/testfirebase", {
+    fetch("https://https://backend.movementdirectory.org/testfirebase", {
         method: "POST",
         mode: "cors",
         headers: {
@@ -34,6 +34,10 @@ if (idToken) {
 <div>
 
     <h1>Dashboard</h1>
+
+    <h2>
+        My Organizations
+    </h2>
 
    <button on:click={testfirebase}>Test Firebase Endpoint</button>
 
