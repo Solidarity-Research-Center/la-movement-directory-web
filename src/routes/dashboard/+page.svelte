@@ -12,7 +12,7 @@ async function testfirebase() {
 const idToken = await auth.currentUser.getIdToken();
 
 if (idToken) {
-    fetch("https://https://backend.movementdirectory.org/testfirebase", {
+    fetch("https://backend.movementdirectory.org/testfirebase", {
         method: "POST",
         mode: "cors",
         headers: {
