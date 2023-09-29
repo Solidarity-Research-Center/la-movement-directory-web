@@ -3,7 +3,26 @@
     import "../../../app.css";
     
   function submitneworg() {
-    fetch("https://backend.movementdirectory.org/makeorg")
+    fetch("https://backend.movementdirectory.org/makeorg", {
+      "method": "POST",
+      "headers": {
+        "content-type": "application/json"
+      },
+      body: JSON.stringify({
+        name: (document.getElementById("orgname") as HTMLInputElement).value,
+        description: "",
+        website: "",
+        banner_url: (document.getElementById("submit-banner-url") as HTMLInputElement).value,
+        profile_url: (document.getElementById("profile-url") as HTMLInputElement).value,
+        university: (document.getElementById("grid-uni") as HTMLInputElement).value,
+        neighbourhood: (document.getElementById("grid-ne") as HTMLInputElement).value,
+        city: (document.getElementById("grid-neighbourhood") as HTMLInputElement).value,
+        state: (document.getElementById("grid-state") as HTMLInputElement).value,
+        zip: (document.getElementById("grid-zip") as HTMLInputElement).value,
+        auth_emails: [],
+        categories: []
+      })
+    })
   }
     </script>
     
