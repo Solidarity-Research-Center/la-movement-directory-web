@@ -4,6 +4,10 @@
 import 'firebase/compat/auth';
     import "../app.css";
 
+    let 
+    show = true;
+
+
     onMount(() => {
         const firebaseConfig = {
             apiKey: "AIzaSyCaVwJEqCza6CLN21ib9KhkVoAPc-uM0Ws",
@@ -19,8 +23,25 @@ import 'firebase/compat/auth';
 
       
 
-
+        if (window.location.href.indexOf("/dashboard") != -1) {
+            show = false;
+        }
     })
+
+    
   </script>
+
+  <nav class={`bg-white border-b border-gray-400 ${show ? ' ' : 'hidden'}`}>
+
+    <div class='flex items-center px-3 py-2'>
+        <img src='/laforall.png'
+        class='h-12'
+        />
+        <p class='font-bold text-xl pb-1'>movement directory</p>
+    </div>
+
+   
+
+  </nav>
   
   <slot />

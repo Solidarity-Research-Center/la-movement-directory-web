@@ -57,7 +57,7 @@ onMount(() => {
 <section class="bg-gray-50">
     <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
         <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 ">
-            <img class="h-16 mr-2" src="https://losangelesforall.org/wp-content/uploads/2022/03/Los-Angeles-for-All-logo-1.png" alt="logo">
+            <img class="h-16 mr-2" src="/laforall.png" alt="logo">
            
         </a>
         <div class="w-full bg-white rounded-lg shadow  md:mt-0 sm:max-w-md xl:p-0 ">
