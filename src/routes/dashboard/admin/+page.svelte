@@ -2,6 +2,9 @@
 
     import "../../../app.css";
     
+  function submitneworg() {
+    fetch("https://backend.movementdirectory.org/makeorg")
+  }
     </script>
     
     <div>
