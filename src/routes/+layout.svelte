@@ -40,7 +40,7 @@ import 'firebase/compat/auth';
         <p class='font-bold text-xl pb-1'>movement directory</p>
 
         
-    <div class='ml-auto font-semibold underline text-amber-600'>Org Login</div>
+    <div class='ml-auto font-semibold underline text-amber-600'><a href='/login'>Org Login</a></div>
     </div>
    
 
