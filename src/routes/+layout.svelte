@@ -38,8 +38,10 @@ import 'firebase/compat/auth';
         class='h-12'
         />
         <p class='font-bold text-xl pb-1'>movement directory</p>
-    </div>
 
+        
+    <div class='ml-auto font-semibold underline text-amber-600'>Org Login</div>
+    </div>
    
 
   </nav>

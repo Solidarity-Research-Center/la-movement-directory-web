@@ -115,7 +115,10 @@
                   </div>
                 </div>
                 
-                <button class='ml-3 bg-blue-500 text-white rounded-lg font-bold px-4 py-2'>
+                <button
+                on:click={() => {submitneworg()}}
+                on:keydown={(e) => {if (e.key === "Enter") {submitneworg()}}}
+                class='ml-3 bg-blue-500 text-white rounded-lg font-bold px-4 py-2'>
                     Create
                 </button>
               </form>
