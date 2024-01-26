@@ -52,7 +52,7 @@
         <p>Explore and connect with hundreds of local unions, collectives, and non-profits.</p>
         <div class='flex flex-row gap-x-3 mt-2'>
         <a href='/login'><button class='bg-white text-black px-3 py-2'>Login</button></a>
-        <a href='/login'></a><button class='bg-orange-400 px-3 py-2'>Org Signup</button></a>
+        <a href='/login'><button class='bg-orange-400 px-3 py-2'>Org Signup</button></a>
         </div>
     </div>
 </div>
